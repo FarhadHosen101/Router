@@ -19,3 +19,23 @@ Authentication: None Required
 Port: UDP/67 (DHCP Server)
 Impact: DoS (Confirmed) & RCE (Possible)
 Complexity: Low
+
+
+
+Normal DHCP Hostname Processing
+
+Stack Layout (Normal Case)
++------------------------+ Higher addresses
+|     Previous Frame     |
++------------------------+
+|   Return Address (4)   |
++------------------------+
+|    Saved EBP (4)       |
++------------------------+
+|                        |
+|   Hostname Buffer      |
+|      (64 bytes)        |
+|                        |
++------------------------+ Lower addresses
+|    Other Variables     |
++------------------------+
