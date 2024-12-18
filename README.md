@@ -25,6 +25,7 @@ Complexity: Low
 Normal DHCP Hostname Processing
 
 Stack Layout (Normal Case)
+
 +------------------------+ Higher addresses
 |     Previous Frame     |
 +------------------------+
